@@ -5,7 +5,6 @@ def load_data():
     return pd.read_csv("data/raw/india_cancer_patients_2022_2025.csv")
 
 def dataset_summary(df):
-    """Displays the basic dataset information."""
     print('Dataset shape:', df.shape)
     print('\n' + '-' * 50)
 
@@ -18,7 +17,6 @@ def dataset_summary(df):
     print('\n' + '-' * 50)
 
 def data_quality_report(df):
-    """Check data quality report."""
     print('\nMissing Values:')
     print(df.isnull().sum())
     print('\n' + '-' * 50)
@@ -28,7 +26,6 @@ def data_quality_report(df):
     print('\n' + '-' * 50)
 
 def preview_data(df):
-    '''Display sample records.'''
     print("\nFirst 5 Rows of Patients:")
     print(df.head())
     print('\n' + '-' * 50)
