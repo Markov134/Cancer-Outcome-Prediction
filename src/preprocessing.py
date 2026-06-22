@@ -1,7 +1,6 @@
 import pandas as pd
 
 def load_data():
-    """Load the raw cancer dataset."""
     return pd.read_csv("data/raw/india_cancer_patients_2022_2025.csv")
 
 def dataset_summary(df):
