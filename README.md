@@ -82,8 +82,8 @@ Cancer-Outcome-Prediction/
 ### Cancer Type Distribution
 ![Cancer Types](outputs/figures/cancer_type_distribution.png)
 
-### Correlation Heatmap
-![Correlation Heatmap](outputs/figures/correlation_heatmap.png)
+### Survival Month Distribution
+![Correlation Heatmap](outputs/figures/survival_month_distribution.png)
 
 ## 📈 Model Performance
 
