@@ -18,6 +18,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.tree import DecisionTreeClassifier
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -75,6 +76,7 @@ def create_preprocessor(df):
         'Diagnosis_Date',
         "Hospital_Name"
     ]
+
     df_copy = df_copy.drop(columns=columns_to_drop)
 
     X = df_copy.drop('Status', axis=1)
@@ -106,6 +108,8 @@ def create_preprocessor(df):
 
     results = []
 
+    plt.figure(figsize=(12, 8))
+
     for name, model in model.items():
 
         pipeline = Pipeline([
@@ -118,11 +122,9 @@ def create_preprocessor(df):
 
         # Prediction
         y_pred = pipeline.predict(X_test)
-        print('y-pred:', y_pred)
 
         # Probability
         y_prob = pipeline.predict_proba(X_test)[:, 1]
-        print('y-prob:', y_prob)
 
         # Metrics
         accuracy = accuracy_score(y_test, y_pred)
@@ -193,6 +195,8 @@ def create_preprocessor(df):
     plt.title("ROC Curve Comparison")
     plt.legend()
     plt.grid(True)
+    plt.tight_layout()
+    plt.savefig("outputs/figures/ROC_Curve_Comparison.png")
     plt.show()
 
     results_df = pd.DataFrame(
