@@ -73,3 +73,19 @@ Cancer-Outcome-Prediction/
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
+
+## 📊 Data Visualizations
+
+### Age Distribution
+![Age Distribution](images/age_distribution.png)
+
+### Cancer Type Distribution
+![Cancer Types](images/cancer_type_distribution.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+## 📈 Model Performance
+
+### ROC Curve Comparison
+![ROC Curve](images/ROC_Curve_Comparison.png)
