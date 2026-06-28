@@ -40,6 +40,8 @@ The dataset contains the following columns:
 | Status | Patient survival outcome (Alive / Deceased) |
 
 ### Dropped Variables
+
+| Variable | Description |
 |----------|-------------|
 | Patient_ID | Adds extra info |
 | Diagnosis_Date | Was split up into YY/MM/DD |
