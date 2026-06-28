@@ -20,18 +20,30 @@ The project follows a complete data science workflow, including:
 
 The dataset contains the following columns:
 
-- Patient_ID (excluded from modeling)
-- Age
-- Gender
-- State
-- City
-- Cancer_Type
-- Stage
-- Treatment_Type
-- Diagnosis_Date (excluded from modeling)
-- Survival_Months
-- Hospital_Name (excluded from modeling)
-- Status (Target Variable)
+| Feature | Description |
+|--------|-------------|
+| Patient_ID | Patient identifier |
+| Age | Patient age |
+| Gender | Patient gender |
+| Cancer_Type | Type of cancer |
+| Stage | Cancer stage |
+| Treatment_Type | Treatment method |
+| Diagnosis_Date | Converted into Year/Month/Day features |
+| Survival_Months | The number of months from diagnosis until death or last follow-up. |
+| Hosptial_Name | Treated at Hospital |
+| Status | Dead or alive |
+
+### Target Variable
+
+| Variable | Description |
+|----------|-------------|
+| Status | Patient survival outcome (Alive / Deceased) |
+
+### Dropped Variables
+|----------|-------------|
+| Patient_ID | Adds extra info |
+| Diagnosis_Date | Was split up into YY/MM/DD |
+| Hospital_Name | Adds extra info |
 
 - Note: Some columns such as `Patient_ID` and `Hospital_Name` were removed during feature engineering as they do not contribute to prediction. The `Diagnosis_Date` is excluded but was split into year, month, and days.
 
