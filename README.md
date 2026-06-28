@@ -18,10 +18,6 @@ The project follows a complete data science workflow, including:
 
 ## 📊 Dataset
 
-The dataset contains patient information including:
-
-## 📊 Dataset Columns
-
 The dataset contains the following columns:
 
 - Patient_ID (excluded from modeling)
