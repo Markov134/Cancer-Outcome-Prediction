@@ -77,15 +77,15 @@ Cancer-Outcome-Prediction/
 ## 📊 Data Visualizations
 
 ### Age Distribution
-![Age Distribution](images/age_distribution.png)
+![Age Distribution](outputs/figures/age_distribution.png)
 
 ### Cancer Type Distribution
-![Cancer Types](images/cancer_type_distribution.png)
+![Cancer Types](outputs/figures/cancer_type_distribution.png)
 
 ### Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Correlation Heatmap](outputs/figures/correlation_heatmap.png)
 
 ## 📈 Model Performance
 
 ### ROC Curve Comparison
-![ROC Curve](images/ROC_Curve_Comparison.png)
+![ROC Curve](outputs/figures/ROC_Curve_Comparison.png)
