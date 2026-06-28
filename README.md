@@ -37,7 +37,7 @@ The dataset contains the following columns:
 
 | Variable | Description |
 |----------|-------------|
-| Status | Patient survival outcome (Alive / Deceased) |
+| Status | Dead or alive |
 
 ### Dropped Variables
 
