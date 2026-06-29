@@ -83,7 +83,7 @@ Cancer-Outcome-Prediction/
 
 - Python
 - Pandas
-- NumPy
+- Seaborn
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
