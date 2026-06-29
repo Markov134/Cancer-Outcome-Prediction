@@ -73,7 +73,7 @@ Each model was evaluated using:
 ```
 Cancer-Outcome-Prediction/
 ├── data/        # Dataset files
-├── outputs/      # Visualizations and plots
+├── outputs/     # Visualizations and plots
 ├── notebooks/   # Jupyter notebooks (EDA + modeling)
 ├── src/         # Python modules for preprocessing and ML pipeline
 └── README.md
